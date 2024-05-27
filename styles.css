@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.circle {
+    width: 300px; /* Increased size */
+    height: 300px; /* Increased size */
+    border-radius: 50%;
+    background-color: #4D3D3D;
+    border: 7px solid #E40000; /* Increased border size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 72px; /* Increased font size */
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    background-color: #7A5C5C;
+    border: 5px solid #B30000; /* Increased border size */
+    border-radius: 20px;
+    padding: 15px; /* Increased padding */
+    width: 360px; /* Increased width to fit larger buttons */
+    position: relative;
+    top: -40px; /* Adjusted overlap */
+    z-index: 2;
+}
+
+.buttons button {
+    background-color: #7A5C5C;
+    border: none;
+    color: white;
+    padding: 15px 30px; /* Increased padding */
+    font-size: 24px; /* Increased font size */
+    cursor: pointer;
+    width: 120px; /* Increased width */
+    transition: background-color 0.2s; /* Smooth transition */
+}
+
+.buttons button:active {
+    background-color: #5e4b4b; /* Slightly darker shade */
+    transition: background-color 0s; /* Immediate revert */
+}
+
+.buttons .divider {
+    width: 2px;
+    background-color: #E40000;
+    margin: 0 15px; /* Adjusted margin */
+}
+
+button:focus {
+    outline: none;
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjusted margin */
+}
+
+.reset button {
+    width: 330px; /* Increased width */
+    background-color: #7A5C5C;
+    border: 5px solid #B30000; /* Increased border size */
+    color: white;
+    padding: 15px; /* Increased padding */
+    font-size: 24px; /* Increased font size */
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s; /* Smooth transition */
+}
+
+.reset button:active {
+    background-color: #5e4b4b; /* Slightly darker shade */
+    transition: background-color 0s; /* Immediate revert */
+}
